@@ -14,11 +14,12 @@ class IceCream extends Desserts {
   }
 // create method in subclass
   includeSpoon() {
-    if(this.type === 'Vanilla') {
+    if(this.type === 'IceCream') {
       console.log('Here is your spoon!');
     }
   }
 }
 
 const vanillaIceCream = new IceCream('IceCream', 340, 'Vanilla', 3);
-  console.log(vanillaIceCream);
+  console.log(vanillaIceCream.scoops);
+  vanillaIceCream.includeSpoon();
